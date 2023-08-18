@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom'
 import { styles } from '../styles'
-import { useState } from 'react'
+// import { useState } from 'react'
 import logo from '../assets/logo/logo2.png'
-import { navLinks } from '../constants/index'
-import { close, menu } from '../assets'
+// import { navLinks } from '../constants/index'
+// import { close, menu } from '../assets'
 
 const Navbar = () => {
-  const [active, setActive] = useState('')
-  const [toggle, setToggle] = useState(false)
+  // const [active, setActive] = useState('')
+  // const [toggle, setToggle] = useState(false)
   return (
     <nav className={`${styles.paddingX} w-full flex items-center  fixed top-0 z-20 bg-primary`}>
       <div className='w-full flex  justify-between items-center max-w-7xl'>
@@ -15,7 +15,7 @@ const Navbar = () => {
           to='/'
           className='flex items-center gap-2 '
           onClick={() => {
-            setActive("")
+            // setActive("")
             window.scrollTo(0, 0)
           }}
 
@@ -23,7 +23,7 @@ const Navbar = () => {
           <img src={logo} alt="" className='md:w-24 w-10 md:h-24 h-10 object-contain' />
           <p className='text-white md:text-[18px] text-[12px] font-bold cursor-pointer'>Daniel <span className='sm:block hidden'> | Javascript Mastery</span></p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10 ">
+        {/* <ul className="list-none hidden sm:flex flex-row gap-10 ">
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -58,7 +58,7 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
     </nav>
   )
